@@ -8,14 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B2253D6428BAB64600991139 /* ClipsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6328BAB64600991139 /* ClipsterApp.swift */; };
-		B2253D6628BAB64600991139 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6528BAB64600991139 /* ContentView.swift */; };
+		B2253D6628BAB64600991139 /* ClipboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6528BAB64600991139 /* ClipboardView.swift */; };
 		B2253D6828BAB64900991139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2253D6728BAB64900991139 /* Assets.xcassets */; };
 		B2253D6B28BAB64900991139 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2253D6A28BAB64900991139 /* Preview Assets.xcassets */; };
 		B2253D6D28BAB64900991139 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6C28BAB64900991139 /* Persistence.swift */; };
 		B2253D7028BAB64900991139 /* Clipster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6E28BAB64900991139 /* Clipster.xcdatamodeld */; };
-		B2253D7B28BAB64900991139 /* ClipsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D7A28BAB64900991139 /* ClipsterTests.swift */; };
-		B2253D8528BAB64900991139 /* ClipsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D8428BAB64900991139 /* ClipsterUITests.swift */; };
-		B2253D8728BAB64900991139 /* ClipsterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D8628BAB64900991139 /* ClipsterUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +35,14 @@
 /* Begin PBXFileReference section */
 		B2253D6028BAB64600991139 /* Clipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2253D6328BAB64600991139 /* ClipsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsterApp.swift; sourceTree = "<group>"; };
-		B2253D6528BAB64600991139 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2253D6528BAB64600991139 /* ClipboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardView.swift; sourceTree = "<group>"; };
 		B2253D6728BAB64900991139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2253D6A28BAB64900991139 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2253D6C28BAB64900991139 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B2253D6F28BAB64900991139 /* Clipster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clipster.xcdatamodel; sourceTree = "<group>"; };
 		B2253D7128BAB64900991139 /* Clipster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipster.entitlements; sourceTree = "<group>"; };
 		B2253D7628BAB64900991139 /* ClipsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2253D7A28BAB64900991139 /* ClipsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsterTests.swift; sourceTree = "<group>"; };
 		B2253D8028BAB64900991139 /* ClipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2253D8428BAB64900991139 /* ClipsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsterUITests.swift; sourceTree = "<group>"; };
-		B2253D8628BAB64900991139 /* ClipsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				B2253D6228BAB64600991139 /* Clipster */,
-				B2253D7928BAB64900991139 /* ClipsterTests */,
-				B2253D8328BAB64900991139 /* ClipsterUITests */,
 				B2253D6128BAB64600991139 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B2253D6328BAB64600991139 /* ClipsterApp.swift */,
-				B2253D6528BAB64600991139 /* ContentView.swift */,
+				B2253D6528BAB64600991139 /* ClipboardView.swift */,
 				B2253D6728BAB64900991139 /* Assets.xcassets */,
 				B2253D6C28BAB64900991139 /* Persistence.swift */,
 				B2253D7128BAB64900991139 /* Clipster.entitlements */,
@@ -116,23 +108,6 @@
 				B2253D6A28BAB64900991139 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B2253D7928BAB64900991139 /* ClipsterTests */ = {
-			isa = PBXGroup;
-			children = (
-				B2253D7A28BAB64900991139 /* ClipsterTests.swift */,
-			);
-			path = ClipsterTests;
-			sourceTree = "<group>";
-		};
-		B2253D8328BAB64900991139 /* ClipsterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B2253D8428BAB64900991139 /* ClipsterUITests.swift */,
-				B2253D8628BAB64900991139 /* ClipsterUITestsLaunchTests.swift */,
-			);
-			path = ClipsterUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2253D6D28BAB64900991139 /* Persistence.swift in Sources */,
-				B2253D6628BAB64600991139 /* ContentView.swift in Sources */,
+				B2253D6628BAB64600991139 /* ClipboardView.swift in Sources */,
 				B2253D6428BAB64600991139 /* ClipsterApp.swift in Sources */,
 				B2253D7028BAB64900991139 /* Clipster.xcdatamodeld in Sources */,
 			);
@@ -276,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2253D7B28BAB64900991139 /* ClipsterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2253D8728BAB64900991139 /* ClipsterUITestsLaunchTests.swift in Sources */,
-				B2253D8528BAB64900991139 /* ClipsterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Clipster/Clipster.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -438,7 +411,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnoldinc.Clipster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamieson.Clipster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Clipster/Clipster.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

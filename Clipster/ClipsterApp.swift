@@ -13,7 +13,7 @@ struct ClipsterApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ClipboardView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
