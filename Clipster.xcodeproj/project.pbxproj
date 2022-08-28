@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B2253D6428BAB64600991139 /* ClipsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6328BAB64600991139 /* ClipsterApp.swift */; };
-		B2253D6628BAB64600991139 /* ClipboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6528BAB64600991139 /* ClipboardView.swift */; };
+		B2253D6628BAB64600991139 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6528BAB64600991139 /* Main.swift */; };
 		B2253D6828BAB64900991139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2253D6728BAB64900991139 /* Assets.xcassets */; };
 		B2253D6B28BAB64900991139 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2253D6A28BAB64900991139 /* Preview Assets.xcassets */; };
 		B2253D6D28BAB64900991139 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6C28BAB64900991139 /* Persistence.swift */; };
 		B2253D7028BAB64900991139 /* Clipster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6E28BAB64900991139 /* Clipster.xcdatamodeld */; };
+		B2253DC028BC121A00991139 /* ClipBoardText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DBF28BC121A00991139 /* ClipBoardText.swift */; };
+		B2253DC328BC141400991139 /* ClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DC228BC141400991139 /* ClipView.swift */; };
+		B2253DC628BC2D5800991139 /* ClipBoardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DC528BC2D5800991139 /* ClipBoardListener.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 /* Begin PBXFileReference section */
 		B2253D6028BAB64600991139 /* Clipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2253D6328BAB64600991139 /* ClipsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsterApp.swift; sourceTree = "<group>"; };
-		B2253D6528BAB64600991139 /* ClipboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardView.swift; sourceTree = "<group>"; };
+		B2253D6528BAB64600991139 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = ../Main.swift; sourceTree = "<group>"; };
 		B2253D6728BAB64900991139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2253D6A28BAB64900991139 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2253D6C28BAB64900991139 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -43,6 +46,10 @@
 		B2253D7128BAB64900991139 /* Clipster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipster.entitlements; sourceTree = "<group>"; };
 		B2253D7628BAB64900991139 /* ClipsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2253D8028BAB64900991139 /* ClipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2253DBD28BBF90B00991139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2253DBF28BC121A00991139 /* ClipBoardText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipBoardText.swift; sourceTree = "<group>"; };
+		B2253DC228BC141400991139 /* ClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipView.swift; sourceTree = "<group>"; };
+		B2253DC528BC2D5800991139 /* ClipBoardListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipBoardListener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +98,11 @@
 		B2253D6228BAB64600991139 /* Clipster */ = {
 			isa = PBXGroup;
 			children = (
+				B2253DC428BC2D4800991139 /* Util */,
+				B2253DC128BC140500991139 /* Views */,
+				B2253DBE28BC11DE00991139 /* Modals */,
+				B2253DBD28BBF90B00991139 /* Info.plist */,
 				B2253D6328BAB64600991139 /* ClipsterApp.swift */,
-				B2253D6528BAB64600991139 /* ClipboardView.swift */,
 				B2253D6728BAB64900991139 /* Assets.xcassets */,
 				B2253D6C28BAB64900991139 /* Persistence.swift */,
 				B2253D7128BAB64900991139 /* Clipster.entitlements */,
@@ -108,6 +118,31 @@
 				B2253D6A28BAB64900991139 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2253DBE28BC11DE00991139 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				B2253DBF28BC121A00991139 /* ClipBoardText.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		B2253DC128BC140500991139 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2253D6528BAB64600991139 /* Main.swift */,
+				B2253DC228BC141400991139 /* ClipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2253DC428BC2D4800991139 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B2253DC528BC2D5800991139 /* ClipBoardListener.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2253DC028BC121A00991139 /* ClipBoardText.swift in Sources */,
 				B2253D6D28BAB64900991139 /* Persistence.swift in Sources */,
-				B2253D6628BAB64600991139 /* ClipboardView.swift in Sources */,
+				B2253D6628BAB64600991139 /* Main.swift in Sources */,
+				B2253DC628BC2D5800991139 /* ClipBoardListener.swift in Sources */,
+				B2253DC328BC141400991139 /* ClipView.swift in Sources */,
 				B2253D6428BAB64600991139 /* ClipsterApp.swift in Sources */,
 				B2253D7028BAB64900991139 /* Clipster.xcdatamodeld in Sources */,
 			);
@@ -405,6 +443,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clipster/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -433,6 +472,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clipster/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
