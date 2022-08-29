@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 struct AboutView: View{
-    let version = "1.0"
+    let version = "1.0.1"
     var description = "Clipster is a simple and easy to use app that keeps track of all of that copying and pasting. It keeps a clipboard history for you so you dont loose that one coppied item. Simply click on the item and it will be put back into your clipboard"
     
     var body: some View{
@@ -24,10 +24,10 @@ struct AboutView: View{
                     .padding()
                 
                 Link("Email Me 📧", destination: URL(string: "mailto:ethan@eefernet.com")!)
+                Button("Close ❌"){
+                    NSApplication.shared.terminate(nil)
+                }
             }
-            
-            
-            
         }
     }
 }
