@@ -15,7 +15,8 @@
 		B2253D7028BAB64900991139 /* Clipster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2253D6E28BAB64900991139 /* Clipster.xcdatamodeld */; };
 		B2253DC028BC121A00991139 /* ClipBoardText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DBF28BC121A00991139 /* ClipBoardText.swift */; };
 		B2253DC328BC141400991139 /* ClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DC228BC141400991139 /* ClipView.swift */; };
-		B2253DC628BC2D5800991139 /* ClipBoardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DC528BC2D5800991139 /* ClipBoardListener.swift */; };
+		B2253DC828BC3ADE00991139 /* ClipboardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DC728BC3ADE00991139 /* ClipboardList.swift */; };
+		B2253DCA28BC415B00991139 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2253DC928BC415B00991139 /* About.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,8 @@
 		B2253DBD28BBF90B00991139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2253DBF28BC121A00991139 /* ClipBoardText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipBoardText.swift; sourceTree = "<group>"; };
 		B2253DC228BC141400991139 /* ClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipView.swift; sourceTree = "<group>"; };
-		B2253DC528BC2D5800991139 /* ClipBoardListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipBoardListener.swift; sourceTree = "<group>"; };
+		B2253DC728BC3ADE00991139 /* ClipboardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardList.swift; sourceTree = "<group>"; };
+		B2253DC928BC415B00991139 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,6 @@
 		B2253D6228BAB64600991139 /* Clipster */ = {
 			isa = PBXGroup;
 			children = (
-				B2253DC428BC2D4800991139 /* Util */,
 				B2253DC128BC140500991139 /* Views */,
 				B2253DBE28BC11DE00991139 /* Modals */,
 				B2253DBD28BBF90B00991139 /* Info.plist */,
@@ -124,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B2253DBF28BC121A00991139 /* ClipBoardText.swift */,
+				B2253DC728BC3ADE00991139 /* ClipboardList.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -133,16 +135,9 @@
 			children = (
 				B2253D6528BAB64600991139 /* Main.swift */,
 				B2253DC228BC141400991139 /* ClipView.swift */,
+				B2253DC928BC415B00991139 /* About.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		B2253DC428BC2D4800991139 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				B2253DC528BC2D5800991139 /* ClipBoardListener.swift */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2253DC028BC121A00991139 /* ClipBoardText.swift in Sources */,
+				B2253DCA28BC415B00991139 /* About.swift in Sources */,
 				B2253D6D28BAB64900991139 /* Persistence.swift in Sources */,
+				B2253DC828BC3ADE00991139 /* ClipboardList.swift in Sources */,
 				B2253D6628BAB64600991139 /* Main.swift in Sources */,
-				B2253DC628BC2D5800991139 /* ClipBoardListener.swift in Sources */,
 				B2253DC328BC141400991139 /* ClipView.swift in Sources */,
 				B2253D6428BAB64600991139 /* ClipsterApp.swift in Sources */,
 				B2253D7028BAB64900991139 /* Clipster.xcdatamodeld in Sources */,

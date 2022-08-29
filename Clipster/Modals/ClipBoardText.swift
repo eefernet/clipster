@@ -9,6 +9,8 @@ import Foundation
 
 struct ClipBoardText: Identifiable{
     var id: Int
-    let date: NSDate
+    let date: String
     let clipBoard: String
 }
+
+

@@ -16,8 +16,8 @@ struct Main: View {
         VStack{
             
             TabView(selection: $tableViewSelection) {
-                ClipView(clips: clipBoardText) .tabItem { Text("Clipboard") }.tag(1)
-                Text("About").tabItem { Text("About") }.tag(2)
+                ClipView().tabItem { Text("Clipboard") }.tag(1)
+                AboutView().tabItem { Text("About") }.tag(2)
             }
             .padding()
             

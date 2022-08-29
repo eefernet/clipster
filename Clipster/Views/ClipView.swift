@@ -11,9 +11,9 @@ import SwiftUI
 
 struct ClipView: View{
     
-    @State var clips = [ClipBoardText]()
+    @ObservedObject var clips = ClipboardList()
     var body: some View{
-        List(clipBoardText){
+        List(clips.clipboardList){
             clip in ListRow(eachClip: clip)
         }
     }
@@ -26,7 +26,8 @@ struct ListRow: View{
     var body: some View{
         HStack{
             Text(eachClip.clipBoard)
-            Spacer()
+                .padding()
+            Text(eachClip.date)
                 .padding()
         }
         .background(Color.gray.opacity(0.2))
@@ -35,17 +36,5 @@ struct ListRow: View{
             pasteBoard.clearContents()
             pasteBoard.writeObjects([eachClip.clipBoard as NSString])
         }
-    }
-}
-
-
-var clipBoardText = [
-    ClipBoardText(id: 1, date: NSDate(), clipBoard: "this is a test string"),
-    ClipBoardText(id: 2, date: NSDate(), clipBoard: "this is another a test string")
-]
-
-struct ClipView_Previews: PreviewProvider {
-    static var previews: some View {
-        ClipView(clips: clipBoardText)
     }
 }

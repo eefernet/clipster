@@ -10,23 +10,17 @@ import SwiftUI
 @main
 struct ClipsterApp: App {
     let persistenceController = PersistenceController.shared
-    
-    
-    
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
             Main()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(ClipboardList())
         }
-    }
-    
-    
+    }  
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
-
     var popover = NSPopover.init()
     var statusBarItem: NSStatusItem?
     static var shared : AppDelegate!
@@ -42,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.contentViewController?.view.window?.makeKey()
         popover.contentSize = NSSize(width: 500, height: 300)
         statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusBarItem?.button?.title = "Clipster"
+        statusBarItem?.button?.title = "📎"
         statusBarItem?.button?.action = #selector(AppDelegate.togglePopover(_:))
     }
     
