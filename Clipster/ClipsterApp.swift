@@ -45,7 +45,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func showPopover(_ sender: AnyObject?) {
         if let button = statusBarItem?.button {
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
-//            !!! - displays the popover window with an offset in x in macOS BigSur.
         }
     }
     @objc func closePopover(_ sender: AnyObject?) {

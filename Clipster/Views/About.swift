@@ -24,9 +24,13 @@ struct AboutView: View{
                     .padding()
                 
                 Link("Email Me 📧", destination: URL(string: "mailto:ethan@eefernet.com")!)
-                Button("Close ❌"){
-                    NSApplication.shared.terminate(nil)
-                }
+                    .padding()
+                Button(action: {NSApplication.shared.terminate(nil)
+                    
+                }, label: {
+                    Text("Close ❌")
+                        .buttonStyle(.automatic)
+                })
             }
         }
     }

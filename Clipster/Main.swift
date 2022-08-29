@@ -20,17 +20,9 @@ struct Main: View {
                 AboutView().tabItem { Text("About") }.tag(2)
             }
             .padding()
-            
-            
-          /*  Text("Clipster")
-                .padding()
-                .frame(maxHeight: .infinity, alignment: .top)
-                */
         }
     }
 }
-
-
 
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
