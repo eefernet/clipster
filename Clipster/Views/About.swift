@@ -8,8 +8,11 @@
 import Foundation
 import SwiftUI
 struct AboutView: View{
-    let version = "1.0.1"
+    @State var verify: Bool
+    @ObservedObject var clips = ClipboardList()
+    let version = "1.0.3"
     var description = "Clipster is a simple and easy to use app that keeps track of all of that copying and pasting. It keeps a clipboard history for you so you dont loose that one coppied item. Simply click on the item and it will be put back into your clipboard"
+    
     
     var body: some View{
         VStack{
@@ -20,6 +23,32 @@ struct AboutView: View{
                 .padding()
                 .frame(maxHeight: .infinity, alignment: .top)
             HStack{
+                VStack{
+                    //Spacer()
+                    Text("Preview Length")
+                    Slider(
+                        value: clips.$lengthOfPreview,
+                            in: 80...450
+                        ) {
+
+                        } minimumValueLabel: {
+                            Text("80")
+                        } maximumValueLabel: {
+                            Text("450")
+                        } onEditingChanged: { editing in
+                            self.verify = editing
+                        }.frame(width: 150, height: 10, alignment: .center)
+                }
+                
+            }
+         /* TODO
+            Button {
+                self.clips.clipboardList.removeAll()
+            } label: {
+                Text("Delete history 🗑️")
+            }*/
+            
+            HStack{
                 Link("Github Link 🖥️", destination: URL(string: "https://github.com/TacoCatDev/clipster.git")!)
                     .padding()
                 
@@ -29,7 +58,8 @@ struct AboutView: View{
                     
                 }, label: {
                     Text("Close ❌")
-                        .buttonStyle(.automatic)
+                        .foregroundColor(.red)
+                        .buttonStyle(.plain)
                 })
             }
         }
@@ -38,6 +68,6 @@ struct AboutView: View{
 
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutView()
+        AboutView(verify: false)
     }
 }

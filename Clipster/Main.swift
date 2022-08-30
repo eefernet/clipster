@@ -14,12 +14,10 @@ struct Main: View {
     
     var body: some View{
         VStack{
-            
             TabView(selection: $tableViewSelection) {
-                ClipView().tabItem { Text("Clipboard") }.tag(1)
-                AboutView().tabItem { Text("About") }.tag(2)
+                ClipView(verify:false).tabItem { Text("Clipboard") }.tag(1)
+                AboutView(verify: false).tabItem { Text("About") }.tag(2)
             }
-            .padding()
         }
     }
 }

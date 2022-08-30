@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct ClipView: View{
-    
+    @State var verify: Bool
     @ObservedObject var clips = ClipboardList()
     var body: some View{
         List(clips.clipboardList){
@@ -19,18 +19,19 @@ struct ClipView: View{
     }
 }
 
-
 struct ListRow: View{
     
     var eachClip: ClipBoardText
     var body: some View{
         HStack{
-            Text(eachClip.clipBoard)
+            Text(eachClip.clipBoarShort)
                 .padding()
+                Spacer()
             Text(eachClip.date)
+                .foregroundColor(.green)
                 .padding()
         }
-        .background(Color.gray.opacity(0.2))
+        .background(Color.black.opacity(0.2))
         .onTapGesture {
             let pasteBoard = NSPasteboard.general
             pasteBoard.clearContents()
