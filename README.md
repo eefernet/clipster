@@ -156,9 +156,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@eefernet](https://twitter.com/eefernet) - ethan@eefernet.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/TacoCatDev/Clipster](https://github.com/TacoCatDev/Clipster)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
