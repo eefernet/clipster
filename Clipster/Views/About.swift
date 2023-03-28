@@ -16,12 +16,15 @@ struct AboutView: View{
     
     var body: some View{
         VStack{
-            Spacer()
+            Spacer(minLength: 40.0)
+
             Text("Clipster, a clipboard manager 📎").font(.largeTitle)
+            
             Text("Version : \(version)").fontWeight(.light).foregroundColor(.green)
+            
             Text(description).multilineTextAlignment(.center)
-                .padding()
-                .frame(maxHeight: .infinity, alignment: .top)
+                .padding(.all)
+                .frame(maxHeight: .infinity, alignment: .center)
             HStack{
                 VStack{
                     //Spacer()

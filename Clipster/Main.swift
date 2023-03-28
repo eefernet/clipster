@@ -8,11 +8,12 @@
 import SwiftUI
 import CoreData
 
-struct Main: View {
+struct ClipBoardView: View {
 
     @State public var tableViewSelection = 0
     
     var body: some View{
+
         VStack{
             TabView(selection: $tableViewSelection) {
                 ClipView(verify:false).tabItem { Text("Clipboard") }.tag(1)
@@ -22,8 +23,12 @@ struct Main: View {
     }
 }
 
+func toggleVisibility() {
+    NSApp.isActive ? NSApp.hide(nil) : NSApp.unhide(nil)
+}
+
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
-        Main()
+        ClipBoardView()
     }
 }
