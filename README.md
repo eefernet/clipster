@@ -116,7 +116,11 @@ In order to use Clipster, you will have to follow some simple steps.
 Once the app is running, simply copy anything you want, and clipster will keep a history for you. To recover something you copied, simply click on the 
 item you would like to put back into your pasteboard.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![alt text](Images/ScreenShot1.png "Clipster lives in your menu bar")
+![alt text](Images/ScreenShot2.png "Your clipboard history, click on one to paste it back to your clipboard")
+![alt text](Images/ScreenShot3.png "Other options")
+
+***_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
