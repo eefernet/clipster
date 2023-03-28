@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/TacoCatDev/clipster">
-    <img src="images/paperclip.png" alt="Logo" width="80" height="80">
+    <img src="Images/paperclip.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Clipster</h3>
