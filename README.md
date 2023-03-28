@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/paperclip.png alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Clipster</h3>
@@ -125,9 +125,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] User defined preview length
+- [X] User defined preview length (Just not updating unless on next open)
+- [ ] Change how the clipboard updates and triggers events, rather than just check it on a timer
 - [ ] User defined commands for pasting strings by using cmd + 1, cmd + 2 etc
 - [ ] Handle images, videos, ect
+- [ ] Major UI Overhaul
+
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
@@ -156,7 +159,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@eefernet](https://twitter.com/eefernet) - ethan@eefernet.com
+Ethan Jamieson - [@eefernet](https://twitter.com/eefernet) - ethan@eefernet.com
 
 Project Link: [https://github.com/TacoCatDev/Clipster](https://github.com/TacoCatDev/Clipster)
 
