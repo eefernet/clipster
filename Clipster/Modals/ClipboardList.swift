@@ -21,6 +21,7 @@ class ClipboardList: ObservableObject{
         self.pasteboard = NSPasteboard.general
         self.changeCount = Int()
         self.formatter1.dateFormat = "h:mm d MMM"
+        
         self.startPollingClipBoard()
     }
     
@@ -33,7 +34,7 @@ class ClipboardList: ObservableObject{
     }
     
     func startPollingClipBoard(){
-        _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.clipChanged), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.clipChanged), userInfo: nil, repeats: true)
     }
     
     @objc func clipChanged(){

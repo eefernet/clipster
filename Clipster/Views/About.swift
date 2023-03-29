@@ -10,7 +10,10 @@ import SwiftUI
 struct AboutView: View{
     @State var verify: Bool
     @ObservedObject var clips = ClipboardList()
-    let version = "1.0.3"
+    
+    let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+
+    
     var description = "Clipster is a simple and easy to use app that keeps track of all of that copying and pasting. It keeps a clipboard history for you so you dont loose that one coppied item. Simply click on the item and it will be put back into your clipboard"
     
     
@@ -29,6 +32,7 @@ struct AboutView: View{
                 VStack{
                     //Spacer()
                     Text("Preview Length")
+                    Text("Current : \(Int(clips.lengthOfPreview)) characters")
                     Slider(
                         value: clips.$lengthOfPreview,
                             in: 80...450
@@ -60,10 +64,9 @@ struct AboutView: View{
                 Button(action: {NSApplication.shared.terminate(nil)
                     
                 }, label: {
-                    Text("Close ❌")
+                    Text("Quit App ❌")
                         .foregroundColor(.red)
-                        .buttonStyle(.plain)
-                })
+                }).buttonStyle(.plain)
             }
         }
     }
