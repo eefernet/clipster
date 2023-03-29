@@ -40,7 +40,7 @@ class ClipboardList: ObservableObject{
     @objc func clipChanged(){
         if let copiedString = pasteboard.string(forType: NSPasteboard.PasteboardType.string), pasteboard.changeCount != self.changeCount{
             changeCount = pasteboard.changeCount
-            let newClip = ClipBoardText(id: changeCount, date: formatter1.string(from: Date()), clipBoard: copiedString, clipBoarShort: copiedString.maxLength(length: Int(lengthOfPreview)))
+            let newClip = ClipBoardText(id: changeCount, date: formatter1.string(from: Date()), clipBoard: copiedString, clipBoardShort: copiedString.maxLength(length: Int(lengthOfPreview)))
             if(!self.clipboardList.contains(where: {$0.clipBoard == newClip.clipBoard})){
                 self.addItem(clip: newClip)
             }

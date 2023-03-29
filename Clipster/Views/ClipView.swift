@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct ClipView: View{
-    @State var verify: Bool
+    //@State var verify: Bool
     @ObservedObject var clips = ClipboardList()
     var body: some View{
         List(clips.clipboardList){
@@ -22,11 +22,12 @@ struct ClipView: View{
 struct ListRow: View{
     
     var eachClip: ClipBoardText
+    
     var body: some View{
         HStack{
-            Text(eachClip.clipBoarShort)
-                .padding()
-                Spacer()
+            Text(eachClip.clipBoardShort)
+                //.padding()
+                //Spacer()
             Text(eachClip.date)
                 .foregroundColor(.green)
                 .padding()
