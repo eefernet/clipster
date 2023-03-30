@@ -11,6 +11,9 @@ import SwiftUI
 
 struct ClipView: View{
     //@State var verify: Bool
+    
+    //@State var lengthOfPreview
+    
     @ObservedObject var clips = ClipboardList()
     var body: some View{
         List(clips.clipboardList){
