@@ -14,6 +14,7 @@ struct AboutView: View{
     @ObservedObject var clips = ClipboardList()
     //Get version number
     let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+    let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as! String
     
     var description = "Clipster is a simple and easy to use app that keeps track of all of that copying and pasting. It keeps a clipboard history for you so you dont loose that one coppied item. Simply click on the item and it will be put back into your clipboard"
     
@@ -22,7 +23,7 @@ struct AboutView: View{
         VStack{
             Text("Clipster, a clipboard manager 📎").font(.largeTitle)
             
-            Text("Version : \(version)").fontWeight(.light).foregroundColor(.green)
+            Text("Version : \(version) build  \(buildNumber)").fontWeight(.light).foregroundColor(.green)
             Spacer()
             Text(description)
                 .multilineTextAlignment(.center)

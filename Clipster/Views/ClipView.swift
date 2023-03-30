@@ -32,10 +32,11 @@ struct ListRow: View{
                 //.padding()
                 //Spacer()
             Text(eachClip.date)
-                .foregroundColor(.green)
+                .foregroundColor(Color(red: 0.34, green: 0.139, blue: 0.34, opacity: 1))
                 .padding()
         }
-        .background(Color.black.opacity(0.2))
+        .background(Color.black.opacity(0.25))
+        .cornerRadius(10)
         .onTapGesture {
             let pasteBoard = NSPasteboard.general
             pasteBoard.clearContents()

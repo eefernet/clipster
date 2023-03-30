@@ -66,8 +66,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func closePopover(_ sender: AnyObject?) {
         popover.performClose(sender)
     }
-    //Technically not needed to send an argument to close popover, however nice to have
-    //for future stuff and it works so why fix it?
+    /*
+     Technically not needed to send an argument to close popover, however nice to
+     have for future stuff and it works so why fix it?
+     */
     @objc func togglePopover(_ sender: AnyObject?) {
         if popover.isShown {
             closePopover(sender)
