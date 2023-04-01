@@ -22,9 +22,10 @@ struct AboutView: View{
     var body: some View{
         
         VStack{
+            Spacer()
             Text("Clipster, a clipboard manager 📎").font(.largeTitle)
             
-            Text("Version : \(version) build  \(buildNumber)").fontWeight(.light).foregroundColor(.green)
+            Text("Version : \(version) build  \(buildNumber)").fontWeight(.light).foregroundColor(Color("versionInfo"))
             Spacer()
             Text(description)
                 .multilineTextAlignment(.center)
