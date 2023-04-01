@@ -20,6 +20,7 @@ struct AboutView: View{
     
     //Mark: Begining of swiftUI view controller
     var body: some View{
+        
         VStack{
             Text("Clipster, a clipboard manager 📎").font(.largeTitle)
             
@@ -29,7 +30,7 @@ struct AboutView: View{
                 .multilineTextAlignment(.center)
                 .padding(.all)
                 .layoutPriority(1)
-                
+            
             Spacer()
             HStack{
                 VStack{
@@ -37,25 +38,23 @@ struct AboutView: View{
                     Text("Current : \(Int(clips.maxPreviewLength)) characters")
                     Slider(
                         value: clips.$maxPreviewLength,
-                            in: 80...450
-                        ) {
-
-                        } minimumValueLabel: {
-                            Text("80")
-                        } maximumValueLabel: {
-                            Text("450")
-                        } onEditingChanged: { editing in
-                            self.verify = editing
-                        }.frame(width: 150, height: 10, alignment: .center)
+                        in: 80...450
+                    ) {
+                        
+                    } minimumValueLabel: {
+                        Text("80")
+                    } maximumValueLabel: {
+                        Text("450")
+                    } onEditingChanged: { editing in
+                        self.verify = editing
+                    }.frame(width: 150, height: 10, alignment: .center)
                     
                     Spacer()
                     
                     HStack{
                         Link("Github Link 🖥️", destination: URL(string: "https://github.com/TacoCatDev/clipster.git")!)
-                            //.padding()
                         
                         Link("Email Me 📧", destination: URL(string: "mailto:ethan@eefernet.com")!)
-                            //.padding()
                         Button(action: {NSApplication.shared.terminate(nil)
                             
                         }, label: {
@@ -66,12 +65,12 @@ struct AboutView: View{
                     Spacer()
                 }
             }
-         /* TODO: Add a delete all button and start from scratch
-            Button {
-                self.clips.clipboardList.removeAll()
-            } label: {
-                Text("Delete history 🗑️")
-            }*/
+            /* TODO: Add a delete all button and start from scratch
+             Button {
+             self.clips.clipboardList.removeAll()
+             } label: {
+             Text("Delete history 🗑️")
+             }*/
         }
     }
 }

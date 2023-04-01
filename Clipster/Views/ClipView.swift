@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 struct ClipView: View{
     //@State var verify: Bool
     
@@ -16,31 +15,41 @@ struct ClipView: View{
     
     @ObservedObject var clips = ClipboardList()
     var body: some View{
-        List(clips.clipboardList){
-            clip in ListRow(eachClip: clip)
+        ZStack{
+            Color("background")
+            List(clips.clipboardList){
+                clip in ListRow(eachClip: clip)
+            }.scrollContentBackground(.hidden)
         }
     }
 }
 
 struct ListRow: View{
-    
     var eachClip: ClipBoardText
     
     var body: some View{
-        HStack{
-            Text(eachClip.clipBoardShort)
-                //.padding()
-                //Spacer()
-            Text(eachClip.date)
-                .foregroundColor(Color(red: 0.34, green: 0.139, blue: 0.34, opacity: 1))
-                .padding()
+        ZStack{
+            HStack{
+                Text(eachClip.clipBoardShort)
+                    .padding()
+                Text(eachClip.date)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .foregroundColor(Color("time"))
+                    .padding()
+            }
+            .background(Color("textBackground"))
+            .cornerRadius(10)
+            .onTapGesture {
+                let pasteBoard = NSPasteboard.general
+                pasteBoard.clearContents()
+                pasteBoard.writeObjects([eachClip.clipBoard as NSString])
+            }
         }
-        .background(Color.black.opacity(0.25))
-        .cornerRadius(10)
-        .onTapGesture {
-            let pasteBoard = NSPasteboard.general
-            pasteBoard.clearContents()
-            pasteBoard.writeObjects([eachClip.clipBoard as NSString])
-        }
+    }
+}
+
+struct ClipPreviews: PreviewProvider {
+    static var previews: some View {
+        ClipView()
     }
 }
