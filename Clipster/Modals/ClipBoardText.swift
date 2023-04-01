@@ -11,7 +11,7 @@ struct ClipBoardText: Identifiable{
     var id: Int
     let date: String
     let clipBoard: String
-    let clipBoarShort: String
+    let clipBoardShort: String
 }
 
 
