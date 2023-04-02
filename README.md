@@ -79,7 +79,7 @@
 ## About The Project
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
-Clipster is a simple lightweight clipboard management app for programmers, students or anyone that likes a clipboard history. Just a small project I started working on because I wanted to have something small and simple.
+Clipster is a simple lightweight clipboard management app for programmers, students or anyone that likes a clipboard history. This also serves as an example of swiftUI implementation as I learn it moving from storyboarding. Just a small project I started working on because I wanted to have something small and simple.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
