@@ -118,9 +118,8 @@ item you would like to put back into your pasteboard.
 
 
 <div align="center">
-  <img src="Images/ScreenShot1.png" width="300px" alt="Clipster lives in your menu bar">
-  <img src="Images/ScreenShot2.png" width="300px" alt="Your clipboard history, click on one to paste it back to your clipboard">
-  <img src="Images/ScreenShot3.png" width="300px" alt="Other options">
+  <img src="Images/screenshot 1.png" width="300px" alt="Clipster lives in your menu bar">
+  <img src="Images/screenshot 2.png" width="300px" alt="Your clipboard history, click on one to paste it back to your clipboard">
 </div>
 
 ***_For more examples, please refer to the [Documentation](https://example.com)_
